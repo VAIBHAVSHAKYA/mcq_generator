@@ -1,4 +1,4 @@
-!pip install sense2vec
+pip install sense2vec
 
 
 
