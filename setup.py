@@ -1,12 +1,12 @@
 from distutils.core import setup
 
-setup(name='Questgen',
+setup(name='mcq_gen',
       version='1.0.0',
-      description='Question generator from any text',
-      author='Questgen contributors',
+      description='mcq generator from any text',
+      author='mcq_gen',
       author_email='vaibhavtiwarifu@gmail.com',
-      packages=['Questgen', 'Questgen.encoding', 'Questgen.mcq'],
-      url="https://github.com/ramsrigouthamg/Questgen.ai",
+      packages=['main', 'encoding', 'mcq'],
+      url="https://github.com/VAIBHAVSHAKYA/mcq_generator",
       install_requires=[
          
            'torch==1.10.0',
@@ -26,5 +26,5 @@ setup(name='Questgen',
            'flashtext==2.7',
            'pandas==1.3.5'
       ],
-      package_data={'Questgen': ['questgen.py', 'mcq.py', 'train_gpu.py', 'encoding.py']}
+      package_data={['mcq.py', 'main.py', 'encoding.py']}
       )
